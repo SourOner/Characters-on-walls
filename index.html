@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sour Oner / Евгений Ващилин — Персонажная выставка</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #000; color: #fff; line-height: 1.5; }
+    section { padding: 80px 6vw; }
+    h1, h2 { font-weight: 600; }
+    h1 { font-size: 48px; margin-bottom: 20px; }
+    h2 { font-size: 32px; margin-bottom: 20px; }
+    p { max-width: 720px; opacity: 0.85; }
+    .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; }
+    .hero span { opacity: 0.6; }
+    .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .artwork { width: 100%; padding-top: 100%; position: relative; cursor: pointer; overflow: hidden; background: #111; }
+    .artwork img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transform: scale(1.1); transition: all 0.6s ease; }
+    .artwork.visible img { opacity: 1; transform: scale(1); }
+    footer { padding: 80px 6vw; border-top: 1px solid #222; }
+    a { color: #fff; text-decoration: none; opacity: 0.7; }
+    a:hover { opacity: 1; }
+    .contacts a { display: block; margin-bottom: 8px; }
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,0.95);display:none;align-items:center;justify-content:center;z-index:1000}
+    .lightbox.active{display:flex}
+    .lightbox img{max-width:90vw;max-height:90vh}
+    .lightbox .nav{position:absolute;top:50%;transform:translateY(-50%);font-size:48px;cursor:pointer;user-select:none;color:#fff;}
+    .lightbox .prev{left:40px}
+    .lightbox .next{right:40px}
+  </style>
+</head>
+<body>
+
+<section class="hero">
+  <h1>Sour Oner<br><span style="font-size:16px; opacity:0.6; font-weight:400;">Евгений Ващилин</span></h1>
+  <p>
+    Я начал рисовать граффити в 2003 году. Работая со шрифтами, я всегда стремился дополнять их персонажами — как визуальным продолжением идеи и настроения.
+    Здесь представлены рисунки моих персонажей, созданные с 2003 года по настоящее время.
+    За время моего творческого пути, я не один раз бросал рисование: иногда на месяц, иногда на год... Но каждый раз возвращался к нему с новым взглядом и опытом (иногда новым ником).
+    Этот проект — результат долгого, прерывистого, но непрерывного пути.
+    Чтобы познакомиться с другими моими работами и проектами, переходите по ссылкам на мои социальные сети.
+  </p>
+</section>
+
+<section>
+  <h2>Экспозиция</h2>
+  <div class="gallery">
+    <div class="artwork"><img src="img/01.jpg" alt=""></div>
+    <div class="artwork"><img src="img/02.jpg" alt=""></div>
+    <div class="artwork"><img src="img/03.jpg" alt=""></div>
+    <div class="artwork"><img src="img/04.jpg" alt=""></div>
+    <div class="artwork"><img src="img/05.jpg" alt=""></div>
+    <div class="artwork"><img src="img/06.jpg" alt=""></div>
+    <div class="artwork"><img src="img/07.jpg" alt=""></div>
+    <div class="artwork"><img src="img/08.jpg" alt=""></div>
+    <div class="artwork"><img src="img/09.jpg" alt=""></div>
+    <div class="artwork"><img src="img/10.jpg" alt=""></div>
+    <div class="artwork"><img src="img/11.jpg" alt=""></div>
+    <div class="artwork"><img src="img/12.jpg" alt=""></div>
+    <div class="artwork"><img src="img/13.jpg" alt=""></div>
+    <div class="artwork"><img src="img/14.jpg" alt=""></div>
+    <div class="artwork"><img src="img/15.jpg" alt=""></div>
+    <div class="artwork"><img src="img/16.jpg" alt=""></div>
+    <div class="artwork"><img src="img/17.jpg" alt=""></div>
+    <div class="artwork"><img src="img/18.jpg" alt=""></div>
+    <div class="artwork"><img src="img/19.jpg" alt=""></div>
+    <div class="artwork"><img src="img/20.jpg" alt=""></div>
+    <div class="artwork"><img src="img/21.jpg" alt=""></div>
+    <div class="artwork"><img src="img/22.jpg" alt=""></div>
+    <div class="artwork"><img src="img/23.jpg" alt=""></div>
+    <div class="artwork"><img src="img/24.jpg" alt=""></div>
+    <div class="artwork"><img src="img/25.jpg" alt=""></div>
+    <div class="artwork"><img src="img/26.jpg" alt=""></div>
+    <div class="artwork"><img src="img/27.jpg" alt=""></div>
+    <div class="artwork"><img src="img/28.jpg" alt=""></div>
+    <div class="artwork"><img src="img/29.jpg" alt=""></div>
+    <div class="artwork"><img src="img/30.jpg" alt=""></div>
+    <div class="artwork"><img src="img/31.jpg" alt=""></div>
+    <div class="artwork"><img src="img/32.jpg" alt=""></div>
+    <div class="artwork"><img src="img/33.jpg" alt=""></div>
+    <div class="artwork"><img src="img/34.jpg" alt=""></div>
+    <div class="artwork"><img src="img/35.jpg" alt=""></div>
+    <div class="artwork"><img src="img/36.jpg" alt=""></div>
+    <div class="artwork"><img src="img/37.jpg" alt=""></div>
+    <div class="artwork"><img src="img/38.jpg" alt=""></div>
+    <div class="artwork"><img src="img/39.jpg" alt=""></div>
+    <div class="artwork"><img src="img/40.jpg" alt=""></div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <div class="nav prev">‹</div>
+  <img src="" alt="Artwork view" />
+  <div class="nav next">›</div>
+</div>
+
+<footer>
+  <h2>Контакты</h2>
+  <div class="contacts">
+    <a href="https://vk.com/sour_oner" target="_blank">VK</a>
+    <a href="https://www.instagram.com/sour_oner/" target="_blank">Instagram</a>
+    <a href="mailto:yevhenvashchylin@gmail.com">yevhenvashchylin@gmail.com</a>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('.artwork').forEach(el => observer.observe(el));
+
+  const artworks=[...document.querySelectorAll('.artwork')];
+  const lightbox=document.getElementById('lightbox');
+  const lightboxImg=lightbox.querySelector('img');
+  let currentIndex=0;
+
+  artworks.forEach((el,i)=>{
+    el.addEventListener('click',()=>{
+      currentIndex=i;
+      const img=el.querySelector('img');
+      lightboxImg.src=img.src;
+      lightbox.classList.add('active');
+    });
+  });
+
+  lightbox.querySelector('.prev').onclick=()=>{
+    currentIndex=(currentIndex-1+artworks.length)%artworks.length;
+    const img=artworks[currentIndex].querySelector('img');
+    lightboxImg.src=img.src;
+  };
+
+  lightbox.querySelector('.next').onclick=()=>{
+    currentIndex=(currentIndex+1)%artworks.length;
+    const img=artworks[currentIndex].querySelector('img');
+    lightboxImg.src=img.src;
+  };
+
+  lightbox.onclick=e=>{if(e.target===lightbox) lightbox.classList.remove('active');};
+</script>
+
+</body>
+</html>
